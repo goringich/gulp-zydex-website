@@ -1,0 +1,97 @@
+.command{
+    height: calc(1110*.007rem);
+    padding: 0.8rem;
+    text-align: center;
+
+    background-image: url("/assets/images/Rectangle\ 63.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // justify-content: center;
+    // align-items: center;
+}
+
+.command__title{
+    font-weight: bold;
+    font-size: 3.42em;
+    text-transform: uppercase;
+    padding-bottom: .7rem;
+}
+
+.loaders{
+    margin: 0 auto;
+    justify-content: center;
+    width: calc(700*.007rem);
+    height: calc(700*.007rem);
+    align-items: center;
+}
+
+.loader__inner{
+    content: "";
+    border-radius: 50%;
+    border: 0.007rem solid #fff;
+
+    &--small{
+        width: calc(135*0.007rem);
+        height: calc(135*0.007rem);
+        position: absolute;
+        right: 31%;
+        top: 31%;
+    }
+
+    &--top{
+        position: absolute;
+        right: 18%;
+        top: 18%;
+        width: calc(365*0.007rem);
+        height: calc(365*0.007rem);
+        border: .007rem dashed #000;
+        // border: .007rem dashed #000;
+        // border: 0
+        // border: calc(3*.007rem) dashed #000;
+
+        // stroke: #000;
+        // stroke-width: 3;
+        // stroke-dasharray: 8, 8.5;
+    }
+
+    &--big{
+        width: calc(576*0.007rem);
+        height: calc(576*0.007rem);
+        position: relative;
+        transform: translateX(5%);
+    }
+}
+
+/**
+ Copyright 2019 Itay Grudev
+ License: MIT
+ */
+
+ .ciclegraph {
+	position: relative;
+  width: 500px;
+  height: 500px;
+  margin: calc(100px / 2 + 0px);
+}
+
+.ciclegraph:before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0;
+  border: 2px solid teal;
+  width: calc( 100% - 2px * 2);
+  height: calc( 100% - 2px * 2 );
+  border-radius: 50%;
+}
+
+.ciclegraph .circle {
+	position: absolute;
+	top: 50%; left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: calc( -100px / 2 );
+  background: teal;
+  border-radius: 50%;
+}

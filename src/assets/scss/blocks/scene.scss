@@ -1,0 +1,97 @@
+#scene, #scene2, #scene3, #scene4, #scene5 {
+    pointer-events: none !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .item{
+        pointer-events: none !important;
+        position: absolute;
+        z-index: -2;
+        
+        img{
+            pointer-events: none !important;
+            position: absolute;
+        }
+
+        &--1{
+            img{
+                height: calc(600*0.007rem) !important;
+                width: calc(600*0.007rem) !important;
+            }
+
+            left: calc(739*0.007rem) !important;
+            top: calc(-382*0.007rem) !important;
+        }
+
+        &--2{
+            img{
+                height: calc(266*0.007rem) !important;
+                width: calc(266*0.007rem) !important;
+            }
+
+            left: calc(1278*0.007rem) !important;
+            top: calc(259*0.007rem) !important;
+        }
+
+        &--3{
+            img{
+                height: calc(67*0.007rem) !important;
+                width: calc(67*0.007rem) !important;
+            }
+
+            left: calc(1456*0.007rem) !important;
+            top: calc(58*0.007rem) !important;
+        }
+
+        &--4{
+            img{
+                height: calc(120*0.007rem) !important;
+                width: calc(120*0.007rem) !important;
+            }
+
+            left: calc(950*0.007rem) !important;
+            top: calc(570*0.007rem) !important;
+        }
+
+        &--5{
+            img{
+                height: calc(42*0.007rem) !important;
+                width: calc(42*0.007rem) !important;
+            }
+
+            left: calc(1875*0.007rem) !important;
+            top: calc(1000*0.007rem) !important;
+        }
+
+        &--6{
+            img{
+                height: calc(560*0.007rem) !important;
+                width: calc(560*0.007rem) !important;
+            }
+
+            left: calc(-915*0.007rem) !important;
+            top: calc(170*0.007rem) !important;
+        }
+
+        &--7{
+            img{
+                height: calc(220*0.007rem) !important;
+                width: calc(220*0.007rem) !important;
+            }
+
+            left: calc(1415*0.007rem) !important;
+            top: calc(100*0.007rem) !important;
+        }
+
+        &--8{
+            img{
+                height: calc(350*0.007rem) !important;
+                width: calc(350*0.007rem) !important;
+            }
+
+            left: calc(1150*0.007rem) !important;
+            top: calc(633*0.007rem) !important;
+        }
+    }
+}

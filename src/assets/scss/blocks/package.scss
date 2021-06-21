@@ -1,0 +1,33 @@
+.back__serv{
+    position: absolute;
+    top: calc(350*0.007rem);
+    z-index: -1;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: calc(250*.007rem);
+    line-height: .7rem;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .1rem #262626;
+
+    width: -moz-max-content, max-content, -webkit-max-content;
+
+    svg{
+        width: 8rem;
+        height: 3rem;
+    
+        image{
+            display: block;
+            width: 15rem;
+            opacity: .35;
+            transform: scale(0) rotate(-180deg);
+            transition: all 3s ease-out;
+        }
+
+        text{
+            transform: translateY(50%);
+        }
+    }
+}

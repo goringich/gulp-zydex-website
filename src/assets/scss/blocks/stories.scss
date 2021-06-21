@@ -1,0 +1,26 @@
+.stories {
+    display: flex;
+    height: calc(800*.007rem);
+}
+
+.stories__item {
+    width: 100%;
+
+    img {
+        display: block;
+        width: calc(550*0.007rem);
+        height: calc(510*0.007rem);
+    }
+
+    .stories__text {
+        display: block;
+    }
+}
+
+.stories__text {
+    text-align: left;
+
+    font-size: 1em;
+    line-height: 1.65;
+    padding: calc(50*0.007rem);
+}

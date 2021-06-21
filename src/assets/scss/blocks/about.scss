@@ -1,0 +1,42 @@
+.about{
+    padding-top: calc(70*0.007rem);
+    max-width: calc(1060*0.007rem);
+    width: 100%;
+
+    &--pt{
+        padding-top: calc(120*0.007rem);
+    }
+
+    &--w{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.about__title{
+    font-size: calc(72*0.007rem);
+    line-height: calc(84*0.007rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: calc(50*0.007rem);
+
+    position: relative;
+
+    img{
+        width: calc(32 * 0.007rem);
+        position: absolute;
+        top: 50%;
+        left: calc(-100*0.007rem);
+        transform: translateY(300%);
+    }
+}
+
+.about__text{
+    line-height: 1.8;
+    font-size: calc(24*0.007rem);
+    margin-bottom: calc(30*0.007rem);
+
+    &--pb{
+        padding-bottom: calc(30*0.007rem);
+    }
+}

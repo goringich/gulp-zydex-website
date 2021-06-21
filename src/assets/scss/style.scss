@@ -1,0 +1,41 @@
+@import "vendor/reset";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    font-size: 7.35294118vw;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+    font-size: calc(21*0.007rem);
+    color: black;
+
+    zoom: 0.8;
+}
+
+.container{
+    max-width: calc(1600*0.007rem);
+    width: 100%;
+    margin: 0 auto;
+}
+
+// import
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/zydex";
+@import "blocks/device";
+@import "blocks/discussion";
+@import "blocks/da";
+@import "blocks/portfolio";
+@import "blocks/patern";
+@import "blocks/application";
+@import "blocks/sites";
+@import "blocks/services";
+@import "blocks/stories";
+@import "blocks/package";
+@import "blocks/scene";
+@import "blocks/command";
+@import "blocks/skill";
+@import "blocks/footer";

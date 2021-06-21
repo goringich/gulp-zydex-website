@@ -1,0 +1,77 @@
+.give{
+    position: absolute;
+    right: 0;
+    bottom: 23%;
+    z-index: -1;
+
+    &--b{
+        bottom: 14%;
+    }
+
+    &--op{
+        opacity: 0;
+        z-index: 1000;
+    }
+}
+
+.give__application{
+    padding: calc(80*.007rem) calc(270*0.007rem);
+    background-image: url("/assets/images/portfolio/Group\ 4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: drop-shadow(0px calc(4*0.007rem) calc(4*0.007rem) rgba(0, 0, 0, 0.25));
+
+    font-size: calc(24*0.007rem);
+
+    letter-spacing: 0.94em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.btn{
+    width: calc(50*.007rem);
+    height: calc(50*.007rem);
+
+    padding: 0;
+    border: none;
+    background-color: #000;
+
+    float: left;
+    transform: translateY(-100%) translateX(-100%);
+
+    position: relative;
+
+    &:after{
+        width: calc(17*0.007rem);
+        height: calc(17*0.007rem);
+
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1000 !important;
+
+        border-left: 0.021rem solid #fff;
+        border-top: 0.021rem solid #fff;
+
+        background-color: transparent;
+
+        transform: rotate(-45deg) translateX(10%) translateY(-50%);
+    }
+
+    &--next:after{
+        transform: rotate(135deg) translateY(78%) translateX(17%)
+    }
+
+    &--prev{
+        background-color: transparent;
+
+        &:after{
+            border-color: black;
+        }
+    }
+}
+

@@ -1,0 +1,58 @@
+.services{
+    text-align: center;
+    padding: calc(250*.007rem) calc(300*.007rem) calc(150*0.007rem);
+}
+
+.services__items{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item{
+    padding: calc(80*0.007rem) 0;
+    width: 27%;
+    background: url("/assets/images/portfolio/Group 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .2s linear;
+
+    position: relative;
+    z-index: 1000;
+    opacity: .9;
+
+    img{
+        width: calc(120*0.007rem);
+        margin-bottom: calc(70*0.007rem);
+    }
+
+    &:hover{
+        transform: scale(1.12);
+    }
+}
+
+.services__title{
+    font-size: calc(72*.007rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: calc(120*0.007rem);
+}
+
+.services__item__title{
+    font-weight: bold;
+    font-size: calc(24*.007rem);
+    line-height: 2.8;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: calc(60*.007rem);
+}
+
+.services__item__text{
+    margin: 0 auto;
+    text-align: left;
+    width: calc(230*0.007rem);
+    font-size: calc(18*0.007rem);
+    line-height: 1.6;
+}
