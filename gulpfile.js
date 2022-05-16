@@ -11,13 +11,13 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
+const postcss = require('gulp-postcss');
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
-
 
 /* Paths */
 const srcPath = 'src/';
@@ -235,6 +235,18 @@ function watchFiles() {
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
 }
+
+gulp.task('autoprefixer', () => {
+    const autoprefixer = require('autoprefixer')
+    const sourcemaps = require('gulp-sourcemaps')
+    const postcss = require('gulp-postcss')
+  
+    return gulp.src('./src/*.css')
+      .pipe(sourcemaps.init())
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('./dest'))
+})
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
