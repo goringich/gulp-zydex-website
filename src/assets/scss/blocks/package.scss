@@ -1,11 +1,11 @@
 .back__serv{
     position: absolute;
-    top: calc(350*0.007rem);
+    top: (350*$rem);
     z-index: -1;
 
     text-decoration: none;
     text-transform: uppercase;
-    font-size: calc(250*.007rem);
+    font-size: (250*$rem);
     line-height: .7rem;
     font-weight: bold;
     letter-spacing: 0.09em;
@@ -29,5 +29,122 @@
         text{
             transform: translateY(50%);
         }
+    }
+
+    &.active{
+        image{
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }   
+    }
+}
+
+.package{
+    padding: (180*$rem) 0;
+}
+
+.package__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: (72*$rem);
+    text-transform: uppercase;
+
+    margin-bottom: (125*$rem);
+}
+
+.package__items{
+    max-width: (1750*$rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.package__item{
+    box-sizing: border-box;
+    width: (520*$rem);
+    padding: (85*$rem) (75*$rem);
+
+    background-image: url("/assets/images/package/Group\ 68.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: .8;
+
+    position: relative;
+    z-index: 2;
+}
+
+.pack__btn{
+    position: absolute;
+    bottom: (90*$rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.package__item__title{
+    font-weight: bold;
+    font-size: (48*$rem);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: (80*$rem);
+}
+
+.package__inner{
+    position: relative;
+}
+
+.term{
+    position: absolute;
+    bottom: (-120*$rem);
+    left: 10%;
+
+    font-weight: 1000;
+    font-size: (24*$rem);
+    text-transform: uppercase;
+}
+
+.package__text{
+    opacity: 0;
+    transform: translateX(10%) translateY(-150%);
+    margin-bottom: (30*$rem);
+    position: relative;
+    line-height: 1.3;
+    transition: all .3s linear;
+
+    &:before{
+        content: "";
+        width: (22*$rem);
+        height: (22*$rem);
+        border: $rem solid #000;
+        border-radius: 50%;
+
+        position: absolute;
+        left: (-50*$rem);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:after{
+        content: "";
+        width: (4*$rem);
+        height: (4*$rem);
+        background-color: #000;
+        border-radius: 50%;
+
+        position: absolute;
+        left: (-39*$rem);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover:before{
+        background-size: contain;
+        background-image: url("/assets/images/Rectangle\ 46.jpg");
+    }
+
+    &.active{
+        transform: translate(10%, 0%);
+        opacity: 1;
     }
 }

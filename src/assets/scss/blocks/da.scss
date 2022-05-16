@@ -1,11 +1,8 @@
-.get-in-touch-block {
-    margin-bottom: calc(150*0.007rem);
+.scroll-block {
+    margin-bottom: (150*$rem);
 
     ul{
-        -webkit-transition: -webkit-transform 1s;
-        transition: -webkit-transform 1s;
         transition: transform 1s;
-        transition: transform 1s, -webkit-transform 1s;
         display: inline-block;
     }
 
@@ -35,13 +32,27 @@
     -webkit-text-stroke: .01rem #262626;
 }
 
+.go .form-init, .go .form-init--back, .go .pack-init, .go .pack-init--back, 
+.go .check-pack-init, .go .check-pack-init--back{
+    -webkit-text-stroke: .01rem #fff;
+} 
+
+.go.scroll-third-row-container{
+    display: none;
+}
+
+.go .form-init, .go .pack-init, .go .check-pack-init {
+    &:after {
+        border: $rem solid rgba(255, 255, 255, 1);
+    }
+}
+
 .pack-init--back, .pack-init, .check-pack-init, .check-pack-init--back{
     font-size: .7rem;
 }
 
 .form-init, .pack-init, .check-pack-init {
     width: -moz-max-content, max-content, -webkit-max-content;
-    -webkit-transition: all 1s ease;
     transition: all .8s ease;
     position: relative;
 
@@ -49,7 +60,7 @@
         content: "";
         width: .25rem;
         height: .09rem;
-        border: 0.007rem solid rgba(0, 0, 0, 0.795);
+        border: $rem solid rgba(0, 0, 0, 0.795);
         
         position: absolute;
         top: 50%;
@@ -62,21 +73,19 @@
         display: none;
 
         position: absolute;
-        bottom: calc(4*0.007rem);
-        left: calc(-7*0.007rem);
+        bottom: (4*$rem);
+        left: (-7*$rem);
 
         svg{
             width: 3.5rem;
             height: .4rem;
-        
+
             image{
                 display: block;
                 width: 100%;
             }
 
-            text{
-                transform: translateY(100%);
-            }
+            text{transform: translateY(100%);}
         }
     }
 }
@@ -93,160 +102,68 @@
 
 
 // list1
-.get-in-touch-first-row-list1,
-.get-in-touch-third-row-list1 {
-    -webkit-animation: marqueeL 30s linear infinite;
+.scroll-first-row-list1,
+.scroll-third-row-list1 {
     animation: marqueeL 30s linear infinite;
 }
 
 // list2
-.get-in-touch-first-row-list2,
-.get-in-touch-third-row-list2 {
-    -webkit-animation: marquee2 30s linear infinite;
+.scroll-first-row-list2,
+.scroll-third-row-list2 {
     animation: marquee2 30s linear infinite;
-    -webkit-animation-delay: 15s;
     animation-delay: 15s;
 }
 
-.get-in-touch-second-row-list1 {
-    -webkit-animation: marqueeR 20s linear infinite;
+.scroll-second-row-list1 {
     animation: marqueeR 20s linear infinite;
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.get-in-touch-second-row-list2,
+.scroll-second-row-list2,
 svg image:hover {
-    -webkit-animation: marquee3 20s linear infinite;
     animation: marquee3 20s linear infinite;
-    -webkit-animation-delay: 10s;
     animation-delay: 10s;
 }
 
-.get-in-touch-first-row-container,
-.get-in-touch-third-row-container{
-    -webkit-transition: 5s linear;
+.scroll-first-row-container,
+.scroll-third-row-container{
     transition: 5s linear;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-box;
     display: flex;
     white-space: nowrap;
 }
 
-.get-in-touch-second-row-container,
-svg image:hover  {
-    -webkit-transition: 5s linear;
+.scroll-second-row-container,
+.scroll-second-row-container svg image:hover {
     transition: 5s linear;
-    -webkit-transform: translateX(10%);
     transform: translateX(10%);
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-box;
     display: flex;
     white-space: nowrap;
 }
 
-.get-in-touch-first-row-container:hover,
-.get-in-touch-second-row-container:hover,
-.get-in-touch-third-row-container:hover {
-    -webkit-transform: translateX(-30%);
+.scroll-first-row-container:hover,
+.scroll-second-row-container:hover,
+.scroll-third-row-container:hover {
     transform: translateX(-30%);
 }
 
-@-webkit-keyframes marqueeL {
-    from {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-
-    to {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-}
-
 @keyframes marqueeL {
-    from {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-
-    to {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes marquee2 {
-    from {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-
-    to {
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
-    }
+    from {transform: translateX(100%)}
+    to {transform: translateX(-100%)}
 }
 
 @keyframes marquee2 {
-    from {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-
-    to {
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
-    }
-}
-
-@-webkit-keyframes marqueeR {
-    from {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-
-    to {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
+    from {transform: translateX(0%)}
+    to {transform: translateX(-200%)}
 }
 
 @keyframes marqueeR {
-    from {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-
-    to {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-}
-
-@-webkit-keyframes marquee3 {
-    from {
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
-        }
-    to {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
+    from {transform: translateX(-100%)}
+    to {transform: translateX(100%)}
 }
 
 @keyframes marquee3 {
-    from {
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
-        }
-    to {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
+    from {transform: translateX(-200%)}
+    to {transform: translateX(0%)}
 }

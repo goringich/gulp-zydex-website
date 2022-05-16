@@ -1,9 +1,9 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: calc(50*0.007rem);
+    margin-bottom: (50*$rem);
     align-items: center;
-    padding: 0rem calc(130 * 0.007rem);
+    padding: 0rem (130 * $rem);
 }
 
 .footer__logo{
@@ -11,36 +11,45 @@
 
     img{
         display: block;
-        width: calc(200*0.007rem);
+        width: (200*$rem);
         transform: translateX(70%);
     }
 }
 
 .footer__network{
     width: 30%;
+}
 
-    .footer__network__content{
-        display: flex;
-        transform: translateX(35%);
+.footer__network__content{
+    display: flex;
+    transform: translateX(35%);
 
-        ul>li>a>img{
-            display: block;
-            margin: calc(35*0.007rem) calc(25*0.007rem) calc(25*0.007rem);
-            width: calc(44*0.007rem);
-            height: calc(44*0.007rem);
-        }
+    ul>li>a>img{
+        display: block;
+        margin: (35*$rem) (25*$rem) (25*$rem);
+        width: (44*$rem);
+        height: (44*$rem);
+    }
+
+    &--h270{
+        display: flex !important;
+        width: (300*$rem);
+        float: right;
+        transform: translateX(-8%);
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .footer__nav{
-    font-size: calc(27 * 0.007rem);
-    padding: calc(50*0.007rem) calc(280*0.007rem) calc(20*0.007rem);
+    font-size: (27 * $rem);
+    padding: (50*$rem) (280*$rem) (20*$rem);
     display: flex;
     justify-content: space-between;
     width: 30%;
     height: auto;
-    border-left: 0.007rem solid #000;
-    border-right: 0.007rem solid #000;
+    border-left: $rem solid #000;
+    border-right: $rem solid #000;
 }
 
 .nav__link{
@@ -49,7 +58,7 @@
 
 .nav__item{
     display: block;
-    margin-bottom: calc(35*0.007rem);
+    margin-bottom: (35*$rem);
 
     &:hover{
         .nav__link{
@@ -65,7 +74,7 @@
 
 .nav__link{
     text-transform: uppercase;
-    font-size: calc(27*0.007rem);
+    font-size: (27*$rem);
     font-weight: 700;
     text-decoration: none;
     color: #000;
@@ -76,8 +85,8 @@
         font-weight: 700;
 
         svg{
-            width: calc(169*0.007rem);
-            height: calc(21*0.007rem);
+            width: (169*$rem);
+            height: (21*$rem);
 
             image{
                 display: block;

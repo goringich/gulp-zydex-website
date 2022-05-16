@@ -15,15 +15,15 @@
 }
 
 .give__application{
-    padding: calc(80*.007rem) calc(270*0.007rem);
+    padding: (80*$rem) (270*$rem);
     background-image: url("/assets/images/portfolio/Group\ 4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    filter: drop-shadow(0px calc(4*0.007rem) calc(4*0.007rem) rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px (4*$rem) (4*$rem) rgba(0, 0, 0, 0.25));
 
-    font-size: calc(24*0.007rem);
+    font-size: (24*$rem);
 
     letter-spacing: 0.94em;
     text-transform: uppercase;
@@ -32,9 +32,10 @@
 }
 
 .btn{
-    width: calc(50*.007rem);
-    height: calc(50*.007rem);
+    width: (50*$rem);
+    height: (50*$rem);
 
+    cursor: pointer !important;
     padding: 0;
     border: none;
     background-color: #000;
@@ -45,8 +46,8 @@
     position: relative;
 
     &:after{
-        width: calc(17*0.007rem);
-        height: calc(17*0.007rem);
+        width: (17*$rem);
+        height: (17*$rem);
 
         content: "";
         position: absolute;

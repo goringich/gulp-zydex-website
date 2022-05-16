@@ -1,10 +1,10 @@
 .about{
-    padding-top: calc(70*0.007rem);
-    max-width: calc(1060*0.007rem);
+    padding-top: (70*$rem);
+    max-width: (1060*$rem);
     width: 100%;
 
     &--pt{
-        padding-top: calc(120*0.007rem);
+        padding-top: (120*$rem);
     }
 
     &--w{
@@ -14,29 +14,29 @@
 }
 
 .about__title{
-    font-size: calc(72*0.007rem);
-    line-height: calc(84*0.007rem);
+    font-size: (72*$rem);
+    line-height: (84*$rem);
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: calc(50*0.007rem);
+    margin-bottom: (50*$rem);
 
     position: relative;
 
     img{
-        width: calc(32 * 0.007rem);
+        width: (32 * $rem);
         position: absolute;
         top: 50%;
-        left: calc(-100*0.007rem);
+        left: (-100*$rem);
         transform: translateY(300%);
     }
 }
 
 .about__text{
     line-height: 1.8;
-    font-size: calc(24*0.007rem);
-    margin-bottom: calc(30*0.007rem);
+    font-size: (24*$rem);
+    margin-bottom: (30*$rem);
 
     &--pb{
-        padding-bottom: calc(30*0.007rem);
+        padding-bottom: (30*$rem);
     }
 }

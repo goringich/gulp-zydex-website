@@ -2,3 +2,62 @@
 layout: default
 title: index
 ---
+
+<style>
+  footer{
+    display: none;
+  }
+
+  body{
+    padding-top: calc(90*.007rem);
+  }
+
+  body:before{
+    content: "creating thinking care about big brands";
+    transform: rotate(-90deg) translateX(calc(100*.007rem));
+    position: absolute;
+    left: calc(50*.007rem);
+    bottom: calc(100*.007rem);
+    text-transform: uppercase;
+    max-width: calc(250*.007rem);
+    font-size: calc(18*.007rem);
+  }
+</style>
+
+<div class="container">
+  {{> headerTopBlack}}
+
+  <nav class="nav">
+    <ul>
+      <li>
+        <a href="index.html" class="skill__default">главная</a>
+        <a href="index.html" class="skill__default--back gradient__text">Главная</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="skill__default">Портфолио</a>
+        <a href="portfolio.html" class="skill__default--back gradient__text">Портфолио</a>
+      </li>
+      <li>
+        <a href="package.html" class="skill__default">наши Услуги</a>
+        <a href="package.html" class="skill__default--back gradient__text">наши Услуги</a>
+      </li>
+      <li>
+        <a href="contact.html" class="skill__default">контакты</a>
+        <a href="contact.html" class="skill__default--back gradient__text">контакты</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- 
+<script>
+  skill__default = document.querySelectorAll(".skill__default--back")
+  Array.from(item => {
+      item.on('mouseover', function(){
+        console.log("da");
+      $(this).parent().addClass('is-hover');
+    }).on('mouseout', function(){
+      $(this).parent().removeClass('is-hover');
+    })
+  })
+</script> -->

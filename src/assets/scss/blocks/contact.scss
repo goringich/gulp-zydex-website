@@ -1,0 +1,313 @@
+.contact__page{
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: (65*$rem);
+  display: flex;
+  background: url("/assets/images/Rectangle\ 63.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 10%;
+
+  &.notactive{
+    .go{
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
+
+    .contact__contact li:nth-child(3) img{
+      transform: translateY(-10%);
+    }
+    
+    .contact__right{
+      transform: translateX(100%);
+      transition: all 1s linear;
+    }
+    
+    .contact__data{
+      transform: translateX(-18%);
+      width: 120vw;
+      transition: all 1s linear;
+    }
+
+    .contact__left{
+      width: 100%;
+      transition: all 1s linear;
+    }
+
+    .contact__contact{
+      max-width: none;
+      transition: all 1s linear;
+    }
+
+    .contact__title{
+      text-align: center;
+      top: (100*$rem);
+      left: 50%;
+      transform: translateX(-50%);
+
+      cursor: pointer;
+      transition: all 1s linear, font-size .3s linear;
+    }
+  }
+
+  &.active{
+    .contact__title{
+      text-align: left;
+      transform: none;
+      max-width: (430*$rem);
+      left: (105*$rem);
+      top: (200*$rem);
+      transition: all 1s linear, font-size .3s linear;
+    }
+
+    .contact__contact li:nth-child(2){
+      transform: translateY(10%);
+    }
+
+    .go{
+      opacity: 0;
+      transition: all 1s linear .1s;
+    }
+    
+    .contact__right{
+      transform: none;
+      transition: all 1s linear;
+    }
+    
+    .contact__data{
+      width: 100vw;
+      transform: translateX(-58.8vw);
+      transition: all 1s linear;
+    }
+
+    .contact__left{
+      width: 50%;
+      transition: all 1s linear;
+    }
+
+    .contact__contact{
+      max-width: (350*$rem);
+      transition: all 1s linear;
+    }
+  }
+}
+
+
+
+
+.go{
+  position: absolute;
+  bottom: (300*$rem);
+  width: 100vw;
+  opacity: 0;
+}
+
+.contact__left{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.contact__right{
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 800;
+  width: 50%;
+  height: 100%;
+  padding: (150*$rem) (150*$rem) (75*$rem);
+  background: linear-gradient(140.78deg, #FFFFFF -36.74%, rgba(255, 255, 255, 0.1) 101.02%);
+}
+
+.form{
+  max-width: (730*$rem);
+}
+
+.contact__right h1{
+  font-weight: bold;
+  font-size: (80*$rem);
+  margin-bottom: (70*$rem);
+}
+
+.contact__input{
+  font-size: (20*$rem);
+  letter-spacing: 0.94em;
+  text-transform: uppercase;
+  margin-bottom: (40*$rem);
+}
+
+.contact__send{
+  display: flex;
+  height: (185*$rem);
+
+  textarea{
+    height: 100% !important;
+  }
+
+  a{
+    text-decoration: none;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: (21*$rem);
+    padding: (80*$rem) (40*$rem);
+
+    &:hover{
+      background-color: rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+.form__item{
+  margin-bottom: (70*$rem);
+
+    
+  &:last-child{
+    display: flex;
+    position: relative;
+    transform: translateX(50*$rem);
+  }
+
+  textarea{
+    resize: none;
+    box-sizing: border-box;
+    padding: ($rem * 20);
+    width: 100%;
+    border: none;
+    opacity: .8;
+    height: (80*$rem);
+    background: linear-gradient(96.52deg, #FFFFFF -62.56%, rgba(255, 255, 255, 0.4) 114.8%);
+  }
+}
+
+.btn__ok__okey{
+  display: block;
+  background: url("/assets/images/contact/Vector 1.png");
+  background-size: cover;
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: -0.27rem;;
+  transform: translateY(-50%);
+  width: (18*$rem);
+  height: (15*$rem);
+  opacity: 0;
+  cursor: pointer;
+
+  &.clicked{
+    opacity: 1;
+  }
+}
+
+.btn__ok:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  left: (-35*$rem);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: .007rem solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+
+.contact__title{
+  position: absolute;
+  max-width: (430*$rem);
+  left: (105*$rem);
+  top: (200*$rem);
+  z-index: 10000;
+
+  font-weight: 900;
+  font-size: (80*$rem);
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  color: #fff;
+  cursor: pointer;
+
+  transition: font-size .2s linear;
+
+  &:hover{
+    font-size: (90*$rem);
+  }
+}
+
+.contact__data__inner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__data{
+  position: absolute;
+  width: 100vw;
+  transform: translateX(-58.8vw);
+  height: (270*$rem);
+  left: 0;
+  z-index: 1000;
+  bottom: (150*$rem);
+
+  background: linear-gradient(91.63deg, #FFFFFF -41.05%, rgba(255, 255, 255, 0.4) 109.74%);
+
+  &:after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: (-100*$rem);
+    right: (-103*$rem);
+    z-index: 1000;
+    width: (103*$rem);
+    height: (100*$rem);
+    background-color: #000;
+  }
+}
+
+.contact__left__img{
+  display: block;
+  height: 100%;
+  float: right;
+}
+
+.contact__contact{
+  padding: (50*$rem);
+  max-width: (350*$rem);
+}
+
+.contact__contact li{
+  display: flex;
+  margin-bottom: (30*$rem);
+}
+
+.contact__contact li img{ 
+  height: (40*$rem);
+  display: block;
+  margin-right: (30*$rem);
+}
+
+.contact__contact li:nth-child(1) img,
+.contact__contact li:nth-child(2) img{
+  transform: translateY(-15%);
+}
+
+.contact__contact li:nth-child(3) img{
+  transform: translateY(15%);
+}
+
+.contact__contact li a{
+  text-decoration: none;
+  color: #000;
+  font-size: (27*$rem);
+}

@@ -1,0 +1,12 @@
+.gradient__text{
+  background-image: linear-gradient(45deg, rgb(218, 226, 107) 30%,rgb(116, 170, 223) 60%, rgb(160, 33, 219) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  display: block;
+  line-height: 1.1;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  animation: rotateGradient 5s ease infinite;
+}

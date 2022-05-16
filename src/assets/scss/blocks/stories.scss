@@ -1,26 +1,42 @@
 .stories {
     display: flex;
-    height: calc(800*.007rem);
+    // opacity: 0;
+    height: 100vh;
+    position: relative;
+    padding: (400*$rem) (377*$rem) (230*$rem);
 }
 
-.stories__item {
-    width: 100%;
+.stories__item__img {
+    transform: translateY(-50%);
+    opacity: 0;
+    display: block;
+    width: (550*$rem);
+    height: (510*$rem);
+    position: relative;
+    z-index: 1;
+    transition: .5s ease-in-out;
 
-    img {
-        display: block;
-        width: calc(550*0.007rem);
-        height: calc(510*0.007rem);
-    }
-
-    .stories__text {
-        display: block;
+    &.active{
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
 
 .stories__text {
+    transform: translateY(-50%);
+    opacity: 0;
     text-align: left;
+    position: relative;
+    display: block;
 
     font-size: 1em;
     line-height: 1.65;
-    padding: calc(50*0.007rem);
+    padding: (50*$rem);
+    transition: .3s linear;
+
+    &.active{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
+

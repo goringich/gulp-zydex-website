@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
-    
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     
@@ -22,482 +21,92 @@
     
     <title>index</title>
 </head>
-<body>   
+<!-- <body contenteditable="true"> -->
+<body>
+    
+    <style>
+      footer{
+        display: none;
+      }
+    
+      body{
+        padding-top: calc(90*.007rem);
+      }
+    
+      body:before{
+        content: "creating thinking care about big brands";
+        transform: rotate(-90deg) translateX(calc(100*.007rem));
+        position: absolute;
+        left: calc(50*.007rem);
+        bottom: calc(100*.007rem);
+        text-transform: uppercase;
+        max-width: calc(250*.007rem);
+        font-size: calc(18*.007rem);
+      }
+    </style>
+    
+    <div class="container">
+      <div class="header__top">
+        <div class="header__left">
+            <a href="index.html" class="header__logo">
+                <img src="/assets/images/zydex/Frame 37.png" alt="">
+                <img src="/assets/images/zydex/logo (2) 1.png" alt="">
+            </a>
+        </div>
+        <div class="header__right">
+            RU|ENG|UKR
+        </div>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" class="skill__default">главная</a>
+            <a href="index.html" class="skill__default--back gradient__text">Главная</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="skill__default">Портфолио</a>
+            <a href="portfolio.html" class="skill__default--back gradient__text">Портфолио</a>
+          </li>
+          <li>
+            <a href="package.html" class="skill__default">наши Услуги</a>
+            <a href="package.html" class="skill__default--back gradient__text">наши Услуги</a>
+          </li>
+          <li>
+            <a href="contact.html" class="skill__default">контакты</a>
+            <a href="contact.html" class="skill__default--back gradient__text">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- 
+    <script>
+      skill__default = document.querySelectorAll(".skill__default--back")
+      Array.from(item => {
+          item.on('mouseover', function(){
+            console.log("da");
+          $(this).parent().addClass('is-hover');
+        }).on('mouseout', function(){
+          $(this).parent().removeClass('is-hover');
+        })
+      })
+    </script> -->
     
     <footer>
-        <div class="container">
-    
-            <div class="get-in-touch-block">
-                <div class="get-in-touch-third-row-container">
-                    <ul class="get-in-touch-third-row-list1">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="x1" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#x1)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b2" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b2)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b3" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b3)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b4" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b4)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-                                    <defs>
-                                        <pattern id="b5" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b5)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="get-in-touch-third-row-list2">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b6" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b6)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b7" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b7)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b8" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b8)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b9" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b9)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="b10" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#b10)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="get-in-touch-second-row-container mobile-get-in-touch-container">
-                    <ul class="get-in-touch-second-row-list1">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-                                    <defs>
-                                        <pattern id="c0" patternUnits="userSpaceOnUse"  height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#c0)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="c1" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#c1)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="c2" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#c2)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="c3" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#c3)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="c4" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#c4)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="get-in-touch-second-row-list2">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d1" patternUnits="userSpaceOnUse" height="100%" width="100%"  >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d1)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d2" patternUnits="userSpaceOnUse"  height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d2)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d3" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d3)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-                                    <defs>
-                                        <pattern id="d4" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d4)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d5" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d5)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="get-in-touch-first-row-container mobile-get-in-touch-container">
-                    <ul class="get-in-touch-first-row-list1">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d6" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg" /> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text  fill="url(#d6)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d7" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d7)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d8" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d8)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-                                    <defs>
-                                        <pattern id="d9" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d9)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="d10" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#d10)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="get-in-touch-first-row-list2">
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="e1" patternUnits="userSpaceOnUse" height="100%" width="100%" >
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#e1)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="e2" patternUnits="userSpaceOnUse"  height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#e2)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="e3" patternUnits="userSpaceOnUse" height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#e3)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="e4" patternUnits="userSpaceOnUse"  height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#e4)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>         
-                        <li>
-                            <a href="#" class="form-init">СВЯЗАТЬСЯ</a>
-                            <a href="#" class="form-init--back">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <pattern id="e5" patternUnits="userSpaceOnUse"  height="100%" width="100%">
-                                            <image xlink:href="/assets/images/Rectangle 46.jpg"/> 
-                                        </pattern> 
-                                    </defs> 
-                                    <text fill="url(#e5)">
-                                        СВЯЗАТЬСЯ
-                                    </text>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="container"><div class="scroll-block">
+      <div class="scroll-third-row-container">
+          <ul class="scroll-third-row-list1 footer-scroll"></ul>
+          <ul class="scroll-third-row-list2 footer-scroll"></ul>
+      </div>
+      <div class="scroll-second-row-container mobile-scroll-container">
+          <ul class="scroll-second-row-list1 footer-scroll"></ul>
+          <ul class="scroll-second-row-list2 footer-scroll"> </ul>
+      </div>
+      <div class="scroll-first-row-container mobile-scroll-container">
+          <ul class="scroll-first-row-list1 footer-scroll"></ul>
+          <ul class="scroll-first-row-list2 footer-scroll"></ul> 
+      </div>
+    </div></div>
     
         <!-- готово -->
         <div class="footer">
@@ -507,8 +116,8 @@
             <div class="footer__nav">
                 <ul>
                     <li class="nav__item">
-                        <a class="nav__link" href="">Главная</a>
-                        <a class="nav__link--back" href="">
+                        <a class="nav__link" href="index.html">Главная</a>
+                        <a class="nav__link--back" href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
                                     <pattern id="p1" patternUnits="userSpaceOnUse" height="100%" width="100%">
@@ -584,8 +193,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="">контакты</a>
-                        <a class="nav__link--back" href="">
+                        <a class="nav__link" href="contact.html">контакты</a>
+                        <a class="nav__link--back" href="contact.html">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
                                     <pattern id="p6" patternUnits="userSpaceOnUse" height="100%" width="100%">
@@ -623,16 +232,12 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <!-- slick slider -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!-- aos -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- parallax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-<script src="assets/js/plash.js"></script>
-<script src="assets/js/app.js"></script>
-</body>
+<script src="../assets/js/app.js"></script>
 </html>

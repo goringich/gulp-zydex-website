@@ -1,3 +1,4 @@
+@import "vars";
 @import "vendor/reset";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
@@ -9,22 +10,24 @@ html{
 body{
     background-color: white;
     font-family: 'Roboto';
-    font-size: calc(21*0.007rem);
+    font-size: (21*$rem);
     color: black;
 
     zoom: 0.8;
 }
 
 .container{
-    max-width: calc(1600*0.007rem);
+    max-width: (1600*$rem);
     width: 100%;
     margin: 0 auto;
 }
 
 // import
+@import "blocks/index";
 @import "blocks/header";
 @import "blocks/about";
 @import "blocks/zydex";
+@import "blocks/gradient";
 @import "blocks/device";
 @import "blocks/discussion";
 @import "blocks/da";
@@ -39,3 +42,4 @@ body{
 @import "blocks/command";
 @import "blocks/skill";
 @import "blocks/footer";
+@import "blocks/contact";

@@ -7,13 +7,13 @@
 .first{
     display: block;
     width: 100%;
-    height: calc(900 * 0.007rem);
+    height: (900 * $rem);
 
     img{
         height: 100%;
         position: absolute;
-        top: calc(-40*0.007rem);
-        left: calc(-300*0.007rem);
+        top: (-40*$rem);
+        left: (-300*$rem);
         z-index: -1000;
     }
 }

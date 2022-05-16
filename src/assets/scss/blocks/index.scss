@@ -1,0 +1,75 @@
+
+.nav{
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: (40*$rem);
+    height: (40*$rem);
+    right: (100*$rem);
+    bottom: (100*$rem);
+    border-radius: 50%;
+
+    background-image: url("/assets/images/portfolio/Ellipse\ bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  ul{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: (750*$rem);
+    margin: (175*$rem) auto 0;
+
+    li{
+      text-align: left;
+      width: max-content;
+      position: relative;
+      overflow: hidden;
+      margin-top: (50*$rem);
+      line-height: (125*$rem);
+
+      &:after{
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: (750*.007rem);
+        height: (150*.007rem);
+        top: 50%;
+        transform: translateY(-60%);
+        left: (-750*.007rem);
+        transition: left .25s ease-in-out;
+      }
+
+      &:hover:after{
+        left: 100%;
+      }
+
+      a{
+        position: relative;
+        right: 0;
+        top: 0;
+        font-weight: 900;
+        text-decoration: none;
+        font-size: (100*$rem);
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      .gradient__text{
+        position: absolute;
+        top: (7.5*$rem);
+      }
+
+      &:hover .skill__default{
+        opacity: 0;
+      }
+
+      &:hover .skill__default--back{
+        opacity: 1;
+      }
+    }
+  }
+}

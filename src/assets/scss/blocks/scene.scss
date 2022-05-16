@@ -1,4 +1,4 @@
-#scene, #scene2, #scene3, #scene4, #scene5 {
+.scene {
     pointer-events: none !important;
     position: absolute;
     width: 100%;
@@ -16,82 +16,236 @@
 
         &--1{
             img{
-                height: calc(600*0.007rem) !important;
-                width: calc(600*0.007rem) !important;
+                height: (600*$rem) !important;
+                width: (600*$rem) !important;
             }
 
-            left: calc(739*0.007rem) !important;
-            top: calc(-382*0.007rem) !important;
+            left: (739*$rem) !important;
+            top: (-382*$rem) !important;
         }
 
         &--2{
             img{
-                height: calc(266*0.007rem) !important;
-                width: calc(266*0.007rem) !important;
+                height: (266*$rem) !important;
+                width: (266*$rem) !important;
             }
 
-            left: calc(1278*0.007rem) !important;
-            top: calc(259*0.007rem) !important;
+            left: (1278*$rem) !important;
+            top: (259*$rem) !important;
         }
 
         &--3{
             img{
-                height: calc(67*0.007rem) !important;
-                width: calc(67*0.007rem) !important;
+                height: (67*$rem) !important;
+                width: (67*$rem) !important;
             }
 
-            left: calc(1456*0.007rem) !important;
-            top: calc(58*0.007rem) !important;
+            left: (1456*$rem) !important;
+            top: (58*$rem) !important;
         }
 
         &--4{
             img{
-                height: calc(120*0.007rem) !important;
-                width: calc(120*0.007rem) !important;
+                height: (120*$rem) !important;
+                width: (120*$rem) !important;
             }
 
-            left: calc(950*0.007rem) !important;
-            top: calc(570*0.007rem) !important;
+            left: (950*$rem) !important;
+            top: (570*$rem) !important;
         }
 
         &--5{
             img{
-                height: calc(42*0.007rem) !important;
-                width: calc(42*0.007rem) !important;
+                height: (42*$rem) !important;
+                width: (42*$rem) !important;
             }
 
-            left: calc(1875*0.007rem) !important;
-            top: calc(1000*0.007rem) !important;
+            left: (1875*$rem) !important;
+            top: (1000*$rem) !important;
         }
 
         &--6{
             img{
-                height: calc(560*0.007rem) !important;
-                width: calc(560*0.007rem) !important;
+                height: (560*$rem) !important;
+                width: (560*$rem) !important;
             }
 
-            left: calc(-915*0.007rem) !important;
-            top: calc(170*0.007rem) !important;
+            left: (-915*$rem) !important;
+            top: (170*$rem) !important;
         }
 
         &--7{
             img{
-                height: calc(220*0.007rem) !important;
-                width: calc(220*0.007rem) !important;
+                height: (220*$rem) !important;
+                width: (220*$rem) !important;
             }
 
-            left: calc(1415*0.007rem) !important;
-            top: calc(100*0.007rem) !important;
+            left: (1415*$rem) !important;
+            top: (100*$rem) !important;
         }
 
         &--8{
             img{
-                height: calc(350*0.007rem) !important;
-                width: calc(350*0.007rem) !important;
+                height: (350*$rem) !important;
+                width: (350*$rem) !important;
             }
 
-            left: calc(1150*0.007rem) !important;
-            top: calc(633*0.007rem) !important;
+            left: (1150*$rem) !important;
+            top: (633*$rem) !important;
+        }
+
+        &--9{
+            img{
+                width: (600*$rem) !important;
+                height: (600*$rem) !important;
+            }
+
+            left: (500*$rem) !important;
+            top: (350*$rem) !important;
+        }
+
+        &--10{
+            img{
+                width: (350*$rem) !important;
+                height: (350*$rem) !important;
+            }
+
+            left: (1400*$rem) !important;
+            top: (900*$rem) !important;
+        }
+
+        &--11{
+            img{
+                width: (280*$rem) !important;
+                height: (280*$rem) !important;
+            }
+
+            left: (700*$rem) !important;
+            top: (1400*$rem) !important;
+        }
+
+        &--12{
+            img{
+                width: (420*$rem) !important;
+                height: (420*$rem) !important;
+            }
+
+            left: (1100*$rem) !important;
+            top: (1700*$rem) !important;
+        }
+
+        &--13{
+            img{
+                width: (220*$rem) !important;
+                height: (220*$rem) !important;
+            }
+
+            left: (350*$rem) !important;
+            top: (1050*$rem) !important;
+        }
+
+        &--14{
+            img{
+                width: (500*$rem) !important;
+                height: (500*$rem) !important;
+            }
+
+            left: (370*$rem) !important;
+            top: (-320*$rem) !important;
+        }
+
+        &--15{
+            img{
+                width: (35*$rem) !important;
+                height: (35*$rem) !important;
+            }
+
+            left: (230*$rem) !important;
+            top: (850*$rem) !important;
+        }
+
+        &--16{
+            img{
+                width: (200*$rem) !important;
+                height: (200*$rem) !important;
+            }
+
+            left: (50*$rem) !important;
+            top: (230*$rem) !important;
+        }
+
+        &--17{
+            img{
+                width: (85*$rem) !important;
+                height: (85*$rem) !important;
+            }
+
+            left: (400*$rem) !important;
+            top: (600*$rem) !important;
+        }
+
+        &--18{
+            img{
+                width: (65*$rem) !important;
+                height: (65*$rem) !important;
+                transform: rotate(54deg);
+            }
+
+            left: (1500*$rem) !important;
+            top: (316*$rem) !important;
+        }
+        
+        &--19{
+            img{
+                transform: rotate(554deg);
+                width: (200*$rem) !important;
+                height: (200*$rem) !important;
+            }
+
+            left: (1250*$rem) !important;
+            top: (315*$rem) !important;
+        }
+        
+        &--20{
+            img{
+                transform: rotate(1254deg);
+                width: (125*$rem) !important;
+                height: (125*$rem) !important;
+            }
+
+            left: (1170*$rem) !important;
+            top: (-58*$rem) !important;
         }
     }
+
+    &--bg{
+        background: linear-gradient(90deg, rgb(209, 209, 209) 36%, #FFFFFF 36%, #FFFFFF 64%) !important;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        mix-blend-mode: screen !important;
+    }
+}
+
+.span-2, .span-1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    background: rgb(206, 74, 74);
+    border-radius: 50%;
+}
+
+.span-1{
+    width: (822*$rem) !important;
+    height: (822*$rem) !important;
+    left: (150*$rem) !important;
+    top: (100*$rem) !important;
+}
+
+.span-2{
+    width: (50*$rem) !important;
+    height: (50*$rem) !important;
+    left: (100*$rem) !important;
+    top: (1000*$rem) !important;
 }
